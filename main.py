@@ -1,3 +1,25 @@
+import time
+
+
+# How to play game/Instructions
+input("⚠️ BEFORE WE GET STARTED ⚠️")
+print()
+input("⚠️ There are some things you should know ⚠️")
+print()
+input("When typing your option of choice. You MUST type it exactly as you see"
+      "\nEven a little mistake could cause a result in answer which doesn't make any   \nsense, or a potential error as a result.")
+print()
+input("Also, if you dont feel like typing the full result,"
+      "\nI gave you the option of using a shortcut,which are seen like this-(Accept), which results in the same output compared to long version.Ex(Accept the challenge)"
+      "\nHowever, even though its shortcut, you MUST type it exactly as you see it. "
+      "\nNO SHORTCUTS OR YOU MAY GET A POTENTIAL ERROR AS A RESULT."
+      "\nSo be careful with typing responses^")
+print()
+input("If you come in contact with a countdown feature:For the love of dieu, Don't attempt to skip it. Also,         \ndont spam the enter/return button on your keyboard")
+print()
+input("Also, this text based adventure is based on the Historical fiction  novel of the same name."
+      "\n NOTE: not everything may be the exact same as the book. But just a summary of the book.")
+print()
 intro = input("  _______________________ "
               "\n|  One day in the life | "
               "\n|     of               |   "
@@ -51,11 +73,12 @@ elif rollcall == "Report to your team" or "Report":
           "\nAt the same time, due to oversleeping,"
           "\nthe new warden decides that you will be sentenced to three days in the hole😱😱")
     print()
-input("However, you get lucky Comrade Shukhov, because today your task is washing the floors"
+input("However, you get lucky Comrade Shukhov, because today, your task is washing the floors"
       "\nof the Warden Quarters!!!"
-      "\nNow get to washing comrade")
+      "\nNow get to washing comrade!")
 print()
-input("But in all seriousness, if you pull something like that, you will seriously spend three days in the hole.")
+input("But in all seriousness, if you pull something like that," 
+"\nyou will seriously spend three days in the hole.")
 print()
 # Washing the headquarters
 headquarters = input("Now, inside the wardens quarters, you are required to clean the floor."
@@ -68,7 +91,7 @@ if headquarters == "Do the job quickly" or "Actually clean it":
           "\nWho care about the actually quality?!")
 
 print()
-input("🔔🔔TIME FOR BREAKFAST🔔🔔. REPORT TO THE MESS HALL")
+input("🔔🔔 TIME FOR BREAKFAST 🔔🔔. REPORT TO THE MESS HALL")
 print()
 messhall = input("You arrive at the mess hall, you behold, YOU get to select what you eat today"
                  "\nSelect a meal:"
@@ -148,7 +171,9 @@ march = input("You and your team begin your march to the power station,"
               "\nDo you..."
               "\n(Step out) Step out of line and tie your shoes"
               "\nor"
-              "\n(Continue)Just continue the march and not even worry")
+              "\n(Continue)Just continue the march and not even worry"
+              "\n>>")
+
 if march == "Step out of line and tie your shoes" or march == "Step out":
     input("🔫"
           "\nWithout the a second, the guards proceed to sho..."
@@ -177,9 +202,9 @@ highnoon = input("Since its noon,"
 
 if highnoon == "Lay the bricks" or highnoon == "lay":
     print("Since you decided to do Comrade, the mortar is starting to dry up in the trough")
-    breakpoint()
-else:
-    weneedfood = input("Since it is now lunch,"
+
+elif highnoon == "eat" or highnoon == "Just  eat your meal":
+    highnoon = input("Since it is now lunch,"
                        "\nYOU get to choose what you want to eat"
                        "\nSelect a Meal of your choice Comrade Shukov:"
                        "\nGruel"
@@ -188,7 +213,8 @@ else:
                        "\nor"
                        "\nGruel"
                        "\n>>")
-if weneedfood == "Gruel":
+# its a Soviet gulag, there is no such thing as "choice"
+if highnoon == "Gruel":
     print("Ah yes, the wonderful meal of Oatmeal Gruel,"
           "\nI hope you weren't to expecting to get some luxury like meat or bread,"
           "\nOther than that, here's a extra  meal of Oatmeal Gruel for you Comrade!")
@@ -198,5 +224,82 @@ input("you end up getting more rations for your fellow comrades since you did on
       "\nCarrying bags of a meal, collecting dirty bowls, or any task a cook is supposed to do. "
       "\nComrade Pavlo, Comrade Gopchick also gets their rations. Although, the foreman receives a double ration.")
 print()
-input("BREAK TIME IS OVER, BACK TO WORK COMRADES"
-      "\nYou arrive back at the")
+bigiron = input("BREAK TIME IS OVER, BACK TO WORK COMRADES"
+      "\nYou arrive back at the power station and are ordered to finish constructing the mortar before nightfall."
+                "\nAlso its 18 degrees below 0, so brick building is still possible"
+                "\nAre you up for task Comrade?"
+                "\nyes"
+                "\nyes"
+                "\n>> ")
+
+if bigiron == "yes":
+    print("Of course you are ready!"
+          "\nIf you said no, it might not look so good Comrade"
+          "\nMight have sent to the hole too comrade")
+print()
+# You get two options, either talking with the overseer on his actions towards your foreman, or you mind your business and continue working
+inspector = input("While working, you see the business overseer arrive,"
+                  "\nHowever the business overseer criticizes Tyurin  for putting tarpaper illegally."
+                  "\nKnowing that the tar paper was used to keep the wind out of windows."
+                  "\nYou feel bad for Tyurin, so you....."
+                  "\n(Attempt)Attempt to talk to the overseer"
+                  "\nor"
+                  "\n(Mind)Mind your business and work"
+                  "\n>> ")
+if inspector == "Attempt" or inspector == "Attempt to talk to the overseer":
+    print("The overseer starts scolding at you,"
+          "\nand warns that if you keep talking at him, or even look at him,"
+          "\nhe'll either have you shot or sent to the hole. Hell, maybe even both"
+          "\nKeep you noise out things that doesn't involve you Silly comrade!")
+else:
+    print("Good choice Comrade Shukov."
+          "\nAnyway, you continue working, and you are surprised that Alyoshka is delivering more bricks."
+          "\nIf only the other comrades worked as hard as Comrade Alyoshka....... ")
+    print()
+input("Anyway, its now sundown and Foreman Tyurin is pleased with the work."
+      "\nHowever, you decide to keep on working even though you should've been done by now.")
+print()
+inspection = input("But than you realize that you are going to be late to the body count!"
+                    "\npress (R) to run."
+                    "\nor simply type (run).... ")
+
+# With typing R/Run , i basically made a countdown timer(10 seconds) in the 00:00 time format.  As the countdown occurs, it goes down by 1,  This occurs in the while loop down below
+# After import the time module
+waitime = 10
+
+while waitime > 0:
+    mins, secs = divmod(waitime, 60)
+    timeformat = '{:02d}:{:02d}'.format(mins, secs)
+    print(timeformat)
+    time.sleep(1)
+    waitime -= 1
+
+if inspection == "run" or "R":
+    print("You made it to the body count right on time."
+          "\nDont make this mistake again Comrade, or it might cost you..")
+    print()
+input("Although you have made it to,  the body count is held up because"
+      "\nsome Moldavian fell asleep at the job site.😒 ")
+print()
+input('While waiting, you hear about some soldiers who have been apart of the Royal Navy'
+      '\nand at the same time, you realized you were supposed to go to the sick bay'
+      '\nbut since you dont ache as much compared to the morning, you''ll just go to  dinner.')
+
+print()
+input("However, you go to Comrade Tsezar to see if there is a package available"
+      "\nthat needs to be delivered.  If there is, you might a reward for helping comrade Shukov!"
+      "\nAnyway, you wait for the body search, but remember that you have a metal blade you picked up earlier"
+      "\nBut this time you got lucky because the guards didn't catch it.")
+
+print()
+#
+input("After a hour, of waiting,  you receive a rich parcel of food,"
+      "\nAlso, due to your outstanding labor at the power station,"
+      "\nyou have been awarded 400 grams of bread!"
+      "\nAnd some biscuits, and sausage for you comrade^")
+print()
+# Actual end of game
+input("After another day of work,"
+      "\nyou pray and thank the lord for getting you through the day,"
+      "\nNow you sleep in preparation for the next day of your 10 year sentence"
+      "\n3,653 DAYS LEFT!. See you later Comrade!")
