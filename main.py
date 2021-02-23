@@ -303,3 +303,4 @@ input("After another day of work,"
       "\nyou pray and thank the lord for getting you through the day,"
       "\nNow you sleep in preparation for the next day of your 10 year sentence"
       "\n3,653 DAYS LEFT!. See you later Comrade!")
+
